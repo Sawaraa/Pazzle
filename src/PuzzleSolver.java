@@ -15,6 +15,7 @@ public class PuzzleSolver {
             List<String> fragments = readFragmentsFromFile(filePath);
             String longestSequence = findLongestSequence(fragments);
             System.out.println("Найдовша послідовність: " + longestSequence);
+            System.out.println("Довжина послідовності: " + longestSequence.length());
         } catch (IOException e) {
             System.err.println("Помилка читання файлу: " + e.getMessage());
         }
